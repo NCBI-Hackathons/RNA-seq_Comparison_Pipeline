@@ -15,5 +15,12 @@ Assemble data. This is returned by fetchAndRun+ if transcript data are desired. 
 __Step 3__
 Analyses can be run in R or with the RFCA+ package. In R, bionconductoR packages edgeR and DESeq2 provide powerful statistical tools in cases where adequate sample sizes have been attained. 
 
+## Dependencies
+__Typical__ linux (i.e.: ubuntu, KDE) should have most of the software necessary to run these scripts. Your system should have bash, Perl, Python (>= 2.7), and R installed (analysis only).
+
+__R packages__: DESeq2, edgeR, SRAdb (and all of their respective dependencies).
+
+
 ## Tutorial
+
 
