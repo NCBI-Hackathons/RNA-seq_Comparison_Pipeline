@@ -6,8 +6,18 @@
 #Then you make the MDSplot and heatmap
 
 ########### input region
-tissue_type='heart'
-project_name='ERP003613'
+if [ -z "$1" ]
+then
+  tissue_type='heart'
+else
+  tissue_type=$1
+fi
+if [ -z "$2" ]
+then
+  project_name='ERP003613'
+else
+  project_name=$2
+fi
 ###########
 
 #grep all rows that contains the input criteria
