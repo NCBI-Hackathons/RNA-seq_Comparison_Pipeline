@@ -1,0 +1,12 @@
+library(edgeR)
+rm(list=ls())
+setwd("//home//ubuntu//Folder_Chen//Indentify_samples//Result_ERP003613")
+rawdata<-read.delim("count.all.6.tissues")
+y<-DGEList(counts=rawdata[,c(2:52)],genes=rawdata[,1])
+data <- cpm(y, prior.count=0.25, log=TRUE)
+write.csv(data, file = "EdgeR_log2cmp_counts.csv")
+
+library(gplots)
+data1 = as.matrix(data[,2:52])
+sds = apply(data1,1,sd)
+pdf('heatmap.pdf',width=20,height=20);heatmap.2(as.matrix(data1)[order(sds,decreasing=TRUE)[1:200],],trace='none',margins=c(20,4));dev.off()
