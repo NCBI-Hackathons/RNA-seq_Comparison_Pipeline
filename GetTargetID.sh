@@ -28,8 +28,8 @@ Vari=$(echo $Sum2/$NumElem|bc -l)
 echo $t $Mean $Vari >> $d/Score.txt
 done #uniq  $d/GID.txt
 
-done # loop over files */
-echo ""> CountForSample.txt
-for d in */ ; do
-cp $d/Comp.txt ./Comp-$d.txt
-done
+#done # loop over files */
+#echo ""> CountForSample.txt
+#for d in */ ; do
+#cp $d/Comp.txt ./Comp-$d.txt
+#done

@@ -13,4 +13,7 @@ __Step 2__
 Assemble data. This is returned by fetchAndRun+ if transcript data are desired. If gene-wise data are desired GetTargetID+ (bash) or collapseGene+ (Python) collapse transcript-specific counts onto their respective genes. collapseGene+ offers a way to examine the data interactively in Python.
 
 __Step 3__
-Analyses can be 
+Analyses can be run in R or with the RFCA+ package. In R, bionconductoR packages edgeR and DESeq2 provide powerful statistical tools in cases where adequate sample sizes have been attained. 
+
+## Tutorial
+
